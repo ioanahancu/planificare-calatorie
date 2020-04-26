@@ -1,0 +1,27 @@
+header {	
+	background-color:#618d8f;
+	background-image: linear-gradient(#2a5759, #6db0b3);
+	background-image: url(../images/header-background.jpg); 
+	background-repeat: no-repeat;
+	color:white;
+	text-align: center;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	color:white;
+	font-style: bolder;
+    font-size:large;
+}
+
+nav, footer{
+	background-image: url(../images/nav-background.jpg); 
+	background-repeat: no-repeat;
+	color: black;
+	text-align: center;
+}
+
