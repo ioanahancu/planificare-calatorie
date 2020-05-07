@@ -1,0 +1,115 @@
+header, footer {	
+	background-color:#618d8f;
+	background-image: linear-gradient(#2a5759, #6db0b3);
+	background-image: url(../images/nav-background.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	color:white;
+	text-align: center;
+}
+
+body {
+	background-color: teal;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	color:white;
+	font-weight: bold;
+	font-size:large;
+	
+}
+/* 
+#incadrare{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#incadrare aside{
+	flex:10%;
+	
+}
+
+#incadrare main{
+	flex:70%;
+} */
+
+aside{
+	background-image: linear-gradient(#163957, #C06C84);
+
+	color: white;
+	text-align: center;
+}
+
+nav a:link, nav a:visited{
+	text-decoration: none;
+	color:inherit;
+}
+
+nav a:hover{
+	background-color: rgb(90, 76, 143) ;
+}
+
+nav{
+	text-align: center;
+}
+
+h1{
+	border: 2px solid #C06C84;
+} 
+
+article h3 {
+	text-shadow: 2px 2px 5px fuchsia;
+	text-align: center;
+}
+
+::selection{
+	background-color:fuchsia;
+	color:white;
+}
+
+#quiz {
+	margin-left: 15em;
+}
+
+#quiz input{
+	margin-left: 5em;
+}
+#quiz button{
+	margin-left: 20em;
+}
+form button{
+	background-image: linear-gradient(#163957, #C06C84);
+	color: white;
+	text-align: center;
+    border-color: #F8B195;
+	font-size: 16px;
+	
+	width: 200px;
+	height: 50px;
+}
+
+#autentificare{
+	padding-bottom: 18em;
+}
+
+#index a:visited, #index a:link, #textLogat a:visited, #textLogat a:link{
+	text-decoration: none;
+	color:inherit;
+	border: 2px solid white;
+	padding: 3px;
+} 
+
+#index{
+	text-align: center;
+}
+
+#textLogat
+{
+	text-align: right;
+}

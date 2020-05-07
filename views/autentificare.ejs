@@ -1,0 +1,14 @@
+<% if (mesajEroare=="autentificareInvalida") { %>
+	<h2 style="color: red; text-align: center;"> Utilizator sau parolă greșite !!!</h2>
+<% } %>
+	<form id="autentificare" style="text-align: center;" action="/verificare-autentificare" method="POST">
+		<label for="user">Utilizator</label>&nbsp;
+		<input type="text" name="user" value="Utilizator">
+		<br/>
+		<br/> 
+		<label for="password">Parolă</label> &nbsp; &nbsp; &nbsp;
+		<input type="password" name="password" value="parola">
+		<br/>
+		<br/>
+		<button type="submit"><i>Autentificare</i></button>
+	</form>

@@ -1,0 +1,51 @@
+<% if (utilizator == null) { %>
+	<h2 id="index">
+		<a href="autentificare"> Autentificare </a>
+	</h2>
+
+<% } else  { %>
+	<div id="index">
+		<p id="textLogat"> Logat ca <%= utilizator%>. 
+			<a href="delogare">Delogare</a>
+		</p>
+	   <h2>Bine ai venit, <%= utilizator %>!</h2>
+   </div> 
+<% } %> 
+<h1 id="despre">  &nbsp; &nbsp; &nbsp; Despre noi: </h1>
+
+<article>
+	<h3> La ce să visăm, dacă nu la o vacanță? </h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Vorbim despre acel sentiment de nerăbdare de a evada, de a ne relaxa, de a scapă de griji...Dar uneori ajungem să ne stresăm cu organizarea acestei escapade, al cărei scop sigur nu ar trebui sa implice acest lucru! </p>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Aici intervenim și vrem sa te ajutăm! Lasă-ne pe noi sa ținem evidența vacanței.</p>
+</article>
+
+<article>
+	<h3> Vrei să pleci, dar nu știi ce destinație să alegi?</h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nicio problemă! Îți testăm noi înclinațiile și îți recomandăm topul destinațiilor perfecte pentru tine!</p>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Intră pe pagina <i><a onclick="schimbaContinut('quiz')">Quiz Destinație</a></i></p>
+</article>
+
+<article>
+	<h3> Elimină stresul bagajului! </h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Desigur, aveai nevoie de acel lucru, dar îți dai seama pe drum sau când ai ajuns la destinație că ai uitat să îl pui în geantă...sună cunoscut? </p>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Scapă de griji și include pe lista noastră oricând îți apare inspirația sau oricând îți amintești obiectele pe care dorești sa nu le uiți!</p>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Accesează <i><a onclick="schimbaContinut('bagaj')">Organizare Bagaj</a></i></p>
+</article>
+
+<article>
+	<h3> Sigur nu vrei să ratezi ceva </h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nu e cel mai eficient să ajungi la destinația dorită și să pierzi din timpul petrecut acolo cu organizarea unui program, cu investigația orelor de vizitat ale obiectivelor turistice sau cu vânatul celor mai bune restaurante pe stradă, nu-i așa? </p>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pune pe <i><a onclick="schimbaContinut('itinerariu')">listă</a></i> activitățile cu care dorești să îți ocupi de fapt timpul și te ajutăm noi să o optimizezi! </p>
+</article>
+
+<article>
+	<h3> Ești curios ce destinații sunt populare? </h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Utilizatorii noștri au condus spre realizarea unui <i> <a onclick="schimbaContinut('top')">top al destinațiilor</a></i></p>
+</article>
+
+<article>
+	<h3> Vrem să știm și opinia ta </h3>
+	<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nu strică niște păreri...sunt chiar <i><a onclick="schimbaContinut('pareri')">aici</a></i></p>
+</article>
+
+

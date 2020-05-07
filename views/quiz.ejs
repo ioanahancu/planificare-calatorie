@@ -1,0 +1,29 @@
+<p id="textLogat"> Logat ca <%= utilizator%>. 
+	<a href="delogare">Delogare</a>
+</p>
+<h2>Află ce destinație ți se potrivește!</h2>
+<br />
+<form id="quiz" action="/rez-quiz" method="POST">
+	<% for( let i1=0; i1 < intrebari.length; i1++)
+	{
+		%>
+		<label> <%= intrebari[i1].intrebare %> </label>
+		<br />
+		<br />
+
+		<% for(let i2=0; i2 < intrebari[i1].variante.length; i2++)
+		{
+			%>
+			<input type="radio" name="<%= i1 %>" value="<%= i2%>"></input>
+			<label for="<%= i1 %>"> <%= intrebari[i1].variante[i2] %> </label>
+			<br/>
+			<br/>
+
+		<% } %>
+
+		
+ 	<% } %>
+	<br />
+	<br />
+	<button type="submit">Înregistrează</button>
+</form>

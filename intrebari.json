@@ -1,0 +1,34 @@
+[
+	{
+		"intrebare": "În ce categorie de vârstă te încadrezi?",
+		"variante": ["0 - 30", "31 - 60 ", "61 - 100"],
+		"raspuns": 0
+	},
+	{
+		"intrebare": "Călătorești singur(ă), în cuplu, cu familia sau cu prietenii? ",
+		"variante": ["Singur(ă)", "În cuplu", "Cu familia", "Cu prietenii"],
+		"raspuns": 0
+	},
+	{
+		"intrebare": "Cauți relaxare sau aventură?",
+		"variante": ["Relaxare", "Aventură"],
+		"raspuns": 0
+	},
+	{
+		"intrebare": "Dorești să practici activități sportive?",
+		"variante": ["Da", "Nu"],
+		"raspuns": 0
+	},
+	{
+		"intrebare": "Preferi să petreci timpul din această vacanță vizitând cât mai multe obiective turistice sau admirând peisajele naturale din zonă? ",
+		"variante": ["Vizitat", "Peisaje", "Prefer să împart in mod egal"],
+		"raspuns": 1
+	},
+	{
+		"intrebare": "Ce preferi, marea sau muntele?",
+		"variante": ["Marea", "Muntele"],
+		"raspuns": 0
+	}
+
+
+]

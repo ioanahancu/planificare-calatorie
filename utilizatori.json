@@ -1,0 +1,14 @@
+[
+	{
+		"utilizator": "test",
+		"parola": "test",
+		"nume":"abc",
+		"prenume":"def"
+	},
+	{
+		"utilizator":"Ioana",
+		"parola":"abc",
+		"nume":"Hancu",
+		"prenume":"Ioana"
+	}
+]

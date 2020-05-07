@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type = "text/css" href="css/stil.css" />
+		<title>Temă de casă - PW</title>
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<header> 
+			<h1>
+				<img src="images/logo.png" alt="logo" height="150" width="200" />
+				Planifică vacanța perfectă cu noi! </h1>
+		</header>
+	<div id="incadrare">
+		<aside>
+			<nav>
+				<a onclick="schimbaContinut('acasa')">Acasă</a> &nbsp; &nbsp; &nbsp;
+				
+				<a onclick="schimbaContinut('quiz')">Quiz Destinație</a> &nbsp; &nbsp; &nbsp;
+				
+				<a onclick="schimbaContinut('bagaj')">Organizare Bagaj</a> &nbsp; &nbsp; &nbsp;
+				
+				<a onclick="schimbaContinut('itinerariu')">Itinerariu</a> &nbsp; &nbsp; &nbsp;
+			
+				<a onclick="schimbaContinut('top')">Top Destinații</a> &nbsp; &nbsp; &nbsp;
+				
+				<a onclick="schimbaContinut('pareri')">Păreri Clienți</a> &nbsp; &nbsp; &nbsp;
+				
+			</nav>
+		</aside>
+		<br/>
+		<br/>
+
+		<!-- <main id="continut"></main> -->
+		<%- body %>
+
+	</div>
+
+		<footer>
+			<p> &copy; 2020.Programare web </p>
+		</footer>
+	</body>
+</html>
