@@ -21,6 +21,6 @@ function schimbaContinut(resursa, jsFisier=null, jsFunctie=null)
             }
         }
     };
-    xhttp.open("GET", resursa + '.html', true);
+    xhttp.open("GET", resursa + '.ejs', true);
     xhttp.send();
 }

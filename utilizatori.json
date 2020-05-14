@@ -10,5 +10,11 @@
 		"parola":"abc",
 		"nume":"Hancu",
 		"prenume":"Ioana"
+	},
+	{
+		"utilizator": "Utilizator",
+		"parola": "parola",
+		"nume":"basic",
+		"prenume":"general"
 	}
 ]

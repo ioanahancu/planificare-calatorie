@@ -29,7 +29,7 @@ app.use(session({
 	resave:false,
 	saveUninitialized:false,
 	cookie:{
-		maxAge:10000
+		maxAge:100000000000
 	}
 }));
 
@@ -61,22 +61,41 @@ app.get('/quiz', (req, res) => {
 });
 
 app.post('/rez-quiz', (req, res) => {
-  fs.readFile('intrebari.json', (err, data) => {
-	if(err) throw err;  
-	var data = JSON.parse(data);
-	var rCorecte = 0;
-	var rIntrebare;
+	var r0=0, r1=0, r2=0, r3=0;
+	// console.log(req.body);
+	let rIntrebare;
+	var intrebari = req.body;
 	for( let key in req.body)
 	{
 		rIntrebare = req.body[key];
-		if(rIntrebare == data[key].raspuns)
+		switch(rIntrebare)
 		{
-			rCorecte ++ ;
-
-		}
+			case '0':
+				r0+=1;
+				break;
+			case '1':
+				r1+=1;
+				break;
+			case '2':
+				r2+=1;
+				break;
+			case '3':
+				r3+=1;
+				break;
+			default:
+				r0+=1;		
+		}	
 	}
-	res.render('rez-quiz', {rCorecte: rCorecte});
-  })
+	let rIntrebari=[r0,r1,r2,r3];
+
+	let max=Math.max(...rIntrebari);
+	max = rIntrebari.findIndex(elem => elem == max)
+	
+	let min=Math.min(...rIntrebari);
+	min = rIntrebari.findIndex(elem => elem == min)
+
+	res.render('rez-quiz', {intrebari: intrebari, max: max, min: min});
+  
 });
 
 app.get('/autentificare', (req,res) =>{
@@ -116,5 +135,52 @@ app.get('/delogare', (req, res) => {
 	req.session.username=null;
 	res.redirect('/');
 });
+
+
+app.get('/bagaj', (req, res) => {
+	if(req.session && req.session.username)
+	{
+		res.render('bagaj');
+	}
+	else
+	{
+		res.redirect('/autentificare');
+	}
+});
+
+app.get('/itinerariu', (req, res) => {
+	if(req.session && req.session.username)
+	{
+		res.render('itinerariu');
+	}
+	else
+	{
+		res.redirect('/autentificare');
+	}
+	
+});
+
+app.get('/top', (req, res) => {
+	if(req.session && req.session.username)
+	{
+		res.render('top');
+	}
+	else
+	{
+		res.redirect('/autentificare');
+	}
+});
+
+app.get('/pareri', (req, res) => {
+	if(req.session && req.session.username)
+	{
+		res.render('pareri');
+	}
+	else
+	{
+		res.redirect('/autentificare');
+	}
+});
+
 
 app.listen(port, () => console.log(`Serverul rulează la adresa http://localhost:`));

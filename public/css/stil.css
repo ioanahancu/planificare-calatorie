@@ -113,3 +113,7 @@ form button{
 {
 	text-align: right;
 }
+
+a:link, a:visited{
+	color: rgb(62, 142, 247);
+}
