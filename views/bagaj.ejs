@@ -1,1 +1,15 @@
-<h2> Organizare Bagaj </h2>
+<body onload="getLista()" style="text-align: center;">
+	<h2> Organizare Bagaj </h2>
+	<form id="formBagaj">
+		<label for="numeItem">Nume: </label>
+		<input type="text" id="numeItem" name="numeItem">  &nbsp; &nbsp; 
+		<label for="greutateItem">Greutate: </label>
+		<input type="text" id="greutateItem" name="greutateItem">  &nbsp; &nbsp; 
+		<button type="button" onclick="adaugalistaBagaj()">Adaugă</button>
+	</form>
+	<br/>
+	<br/>
+	<table id="Bagaj"></table>
+	<br/>
+	<br/>
+</body>

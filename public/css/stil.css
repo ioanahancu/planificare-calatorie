@@ -22,22 +22,6 @@ body {
 	font-size:large;
 	
 }
-/* 
-#incadrare{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-#incadrare aside{
-	flex:10%;
-	
-}
-
-#incadrare main{
-	flex:70%;
-} */
 
 aside{
 	background-image: linear-gradient(#163957, #C06C84);
@@ -80,9 +64,11 @@ article h3 {
 #quiz input{
 	margin-left: 5em;
 }
+
 #quiz button{
 	margin-left: 20em;
 }
+
 form button{
 	background-image: linear-gradient(#163957, #C06C84);
 	color: white;
@@ -116,4 +102,31 @@ form button{
 
 a:link, a:visited{
 	color: rgb(62, 142, 247);
+}
+
+table, td {
+    border: 1px solid #6C5B7B;
+    padding: 2px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #6C5B7B;
+}
+
+tr{
+	text-align: center;
+}
+
+#Bagaj{
+	text-align: center;
+	margin-left: 25em;
+}
+
+#formBagaj button{
+	height:30px;
+}
+
+#top{
+	text-align: center;
 }

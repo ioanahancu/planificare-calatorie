@@ -32,6 +32,8 @@ app.use(session({
 		maxAge:100000000000
 	}
 }));
+//utilizare js
+app.use('js', express.static(__dirname + '/js/'));
 
 // la accesarea din browser adresei http://localhost:6789/ se va returna view-ul index.ejs
 app.get('/', (req, res) => {
@@ -182,5 +184,13 @@ app.get('/pareri', (req, res) => {
 	}
 });
 
+app.get('/top-destinatii', (req, res) => {
+
+	fs.readFile('top-destinatii.json', (err,data) => {
+		if(err) throw err;
+		let destinatii = JSON.parse(data);
+		res.send({destinatii :  destinatii});	
+	});
+});
 
 app.listen(port, () => console.log(`Serverul rulează la adresa http://localhost:`));
