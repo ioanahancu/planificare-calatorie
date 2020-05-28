@@ -149,8 +149,6 @@ function getLista()
 			location.reload();
 		});
 	  });
-	
-	
 }
 
 function CalculGreutate(table)
