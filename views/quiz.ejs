@@ -1,9 +1,9 @@
 <p id="textLogat"> Logat ca <%= utilizator%>. 
-	<a href="delogare">Delogare</a>
+	<a href="autentificare/delogare">Delogare</a>
 </p>
 <h2>Află ce destinație ți se potrivește!</h2>
 <br />
-<form id="quiz" action="/rez-quiz" method="POST">
+<form id="quiz" action="quiz/rez-quiz" method="POST">
 	<% for( let i1=0; i1 < intrebari.length; i1++)
 	{
 		%>
