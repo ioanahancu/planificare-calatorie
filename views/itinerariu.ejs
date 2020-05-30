@@ -1,10 +1,30 @@
-<h2> Itinerariu </h2>
-<form id="search_form">
-	<label>Unde vei pleca?</label>
-	<input type="text" id="textbox">
-	<button onclick="onClick()">Caută</button>
-</form>
-<div id="info"></div>
-<div id="list"></div>
-<div id="poi"></div>
-<button id="next_button" onclick="onNextTrip()">Next</button>
+<script src="../js/tripit.js"></script>
+<script src="https://opentripmap.io/js/directory.en.js"></script>
+
+<h2 style="text-align: center;"> Caută atracțiile turistice și descoperă locuri interesante </h2>
+<br />
+<br />
+<div id="container">
+	<div class="display">
+		<form id="search_form">
+			<label style="font-size: 1.5em;">Unde vei pleca?</label>
+			<br />
+			<br />
+			<input id="textbox" type="search" placeholder="Region, city, village etc. (e.g. Moscow)">
+			<button id="search_button" onclick="onClick()">Caută</button>
+		</form>
+		<br />
+		<br />
+		<div id="info" class="deIncadrat" hidden></div>
+		<br />
+		<br />
+
+		<div class="row">
+			<div id="list" hidden></div>
+			<button id="next_button" onclick="onNextTrip()">Next</button>
+		</div>
+	</div>
+	
+	<div id="poi" class="deIncadrat" hidden></div>
+
+</div>

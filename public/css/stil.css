@@ -1,8 +1,7 @@
 header, footer {	
 	background-color:#618d8f;
-	background-image: linear-gradient(#2a5759, #6db0b3);
 	background-image: url(../images/nav-background.jpg); 
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
 	background-size: cover;
 
 	color:white;
@@ -14,7 +13,7 @@ body {
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-attachment: scroll;
 	
 	font-family: Arial, Arial, Helvetica, sans-serif;
 	color:white;
@@ -80,7 +79,7 @@ form button{
 	height: 50px;
 }
 
-#autentificare{
+#autentificare, #top{
 	padding-bottom: 18em;
 }
 
@@ -123,10 +122,52 @@ tr{
 	margin-left: 18em;
 }
 
-#formBagaj button{
+#formBagaj button, #search_button{
 	height:30px;
 }
 
 #top{
 	text-align: center;
 }
+
+/* ------- */
+#container{
+	margin-left: 100px;
+}
+
+#next_button {
+	margin-top: 5px;
+	visibility: hidden;
+	margin-left: 170px;
+}
+
+.deIncadrat {
+	border: 1px solid #6C5B7B;
+	padding: 3px;
+}
+
+#textbox {
+	height: 30px;
+	width: 400px;
+}
+
+#list .deIncadrat:hover{
+	background-color:#6C5B7B
+}
+
+#poi{
+	text-align: center;
+}
+
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: left;
+}
+
+#display, #poi{
+	flex:30%;
+	padding:5px;
+}
+
