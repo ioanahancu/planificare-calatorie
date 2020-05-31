@@ -22,6 +22,19 @@ body {
 	
 }
 
+@media screen and (max-width: 670px){
+	nav a{
+		display: block;
+		width: 100%;
+	}
+
+	#Bagaj, #quiz button{
+		margin-left: 0px !important;
+	}
+
+}
+
+
 aside{
 	background-image: linear-gradient(#163957, #C06C84);
 
