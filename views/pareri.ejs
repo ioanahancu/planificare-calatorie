@@ -1,1 +1,27 @@
-<h2>Păreri</h2>
+<script src="../js/pareri.js"></script>
+
+<p id="textLogat"> Logat ca <%= utilizator%>.
+	<a href="autentificare/delogare">Delogare</a>
+</p>
+<h2 style="text-align: center;">Păreri</h2>
+<div id="mainPareri">
+	<div id="inserareComment">
+		<h3>Ajută ceilalți utilizatori cu o părere</h3>
+		<form id="inserareComment" method="post" action="pareri/inserare">
+			<label for="numeUtilizator">Nume: </label> <br />
+			<input type="text" id="numeUtilizator" name="numeUtilizator"> </input>
+			<br />
+			<br />
+			<label for="comment">Comentariu: </label> <br />
+			<textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+			<br />
+			<br />
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<div id="afisareComment">
+		<h3 id="ask">Ești curios/curioasă de alte opinii? Click <a class="aici" onclick="getComments()">aici</a></h3>
+		<div id="comentarii"></div>
+	</div>
+
+</div>

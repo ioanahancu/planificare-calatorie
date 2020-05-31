@@ -1,7 +1,8 @@
 exports.dummy = (req, res) => {
 	if(req.session && req.session.username)
 	{
-		res.render('bagaj');
+		var utilizator = req.session.username;
+		res.render('bagaj', {utilizator: utilizator});
 	}
 	else
 	{

@@ -172,15 +172,17 @@ tr{
 	text-align: center;
 }
 
-#container {
+#container, #mainPareri {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: left;
 }
 
-#display, #poi{
+#display, #poi, #inserareComment, #afisareComment{
 	flex:30%;
 	padding:5px;
 }
+
+/* ---- */
 

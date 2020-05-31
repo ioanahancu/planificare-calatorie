@@ -1,5 +1,8 @@
 function getTop()
 {
+	var p=document.getElementById("askDest");
+	p.setAttribute("hidden", true);
+
 	var xhttp = new XMLHttpRequest();
 
 	xhttp.addEventListener("load", function(){
