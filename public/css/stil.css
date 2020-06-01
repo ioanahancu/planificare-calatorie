@@ -165,7 +165,8 @@ tr{
 }
 
 #list .deIncadrat:hover{
-	background-color:#6C5B7B
+	background-color:#6C5B7B;
+	cursor:grab;
 }
 
 #poi{
@@ -185,4 +186,6 @@ tr{
 }
 
 /* ---- */
-
+.aici:hover{
+	cursor: grab;
+}
